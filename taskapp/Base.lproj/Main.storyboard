@@ -101,7 +101,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLJ-5b-lrZ">
-                                <rect key="frame" x="10" y="334" width="394" height="21"/>
+                                <rect key="frame" x="10" y="334" width="69.5" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -123,16 +123,23 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="0qd-Ea-0zS">
-                                <rect key="frame" x="0.0" y="409" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="418" width="414" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="5Pj-WG-uX2"/>
                                 </constraints>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K32-CP-aLW">
-                                <rect key="frame" x="10" y="365" width="394" height="34"/>
+                                <rect key="frame" x="10" y="374" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kb-RZ-dD4">
+                                <rect key="frame" x="312" y="334" width="92" height="30"/>
+                                <state key="normal" title="カテゴリ作成"/>
+                                <connections>
+                                    <segue destination="jvb-2Y-BCJ" kind="show" id="3e1-MD-6Np"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QPd-bm-247"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -143,6 +150,7 @@
                             <constraint firstItem="QPd-bm-247" firstAttribute="trailing" secondItem="a3N-00-KoI" secondAttribute="trailing" constant="10" id="ADw-jw-Cp3"/>
                             <constraint firstItem="QPd-bm-247" firstAttribute="trailing" secondItem="ddV-Yd-Le3" secondAttribute="trailing" constant="10" id="CD3-gl-Jxb"/>
                             <constraint firstItem="a3N-00-KoI" firstAttribute="top" secondItem="ZCq-NR-ZNV" secondAttribute="bottom" constant="10" id="H2a-UX-PJu"/>
+                            <constraint firstItem="2kb-RZ-dD4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yLJ-5b-lrZ" secondAttribute="trailing" constant="8" id="IC6-te-qr7"/>
                             <constraint firstItem="K32-CP-aLW" firstAttribute="leading" secondItem="QPd-bm-247" secondAttribute="leading" constant="10" id="OVz-S0-QgO"/>
                             <constraint firstItem="yLJ-5b-lrZ" firstAttribute="leading" secondItem="QPd-bm-247" secondAttribute="leading" constant="10" id="R2q-OU-IHZ"/>
                             <constraint firstItem="NdD-ya-QGI" firstAttribute="leading" secondItem="QPd-bm-247" secondAttribute="leading" constant="10" id="VBF-Hp-lJf"/>
@@ -151,12 +159,15 @@
                             <constraint firstItem="QPd-bm-247" firstAttribute="trailing" secondItem="NdD-ya-QGI" secondAttribute="trailing" constant="10" id="YRM-fS-cqL"/>
                             <constraint firstItem="ddV-Yd-Le3" firstAttribute="top" secondItem="QPd-bm-247" secondAttribute="top" constant="10" id="a3r-K5-Lt6"/>
                             <constraint firstItem="0qd-Ea-0zS" firstAttribute="top" secondItem="K32-CP-aLW" secondAttribute="bottom" constant="10" id="aJe-gH-4kE"/>
+                            <constraint firstItem="2kb-RZ-dD4" firstAttribute="centerY" secondItem="yLJ-5b-lrZ" secondAttribute="centerY" id="avF-qr-iPm"/>
                             <constraint firstItem="0qd-Ea-0zS" firstAttribute="trailing" secondItem="QPd-bm-247" secondAttribute="trailing" id="c5J-46-ZWv"/>
                             <constraint firstItem="QPd-bm-247" firstAttribute="trailing" secondItem="ZCq-NR-ZNV" secondAttribute="trailing" constant="10" id="dmx-Wc-7NQ"/>
                             <constraint firstItem="ddV-Yd-Le3" firstAttribute="leading" secondItem="QPd-bm-247" secondAttribute="leading" constant="10" id="jrt-aw-qjQ"/>
-                            <constraint firstItem="QPd-bm-247" firstAttribute="trailing" secondItem="yLJ-5b-lrZ" secondAttribute="trailing" constant="10" id="kbL-Kt-ylY"/>
+                            <constraint firstItem="2kb-RZ-dD4" firstAttribute="top" secondItem="NdD-ya-QGI" secondAttribute="bottom" constant="10" id="lXd-pi-lRM"/>
                             <constraint firstItem="NdD-ya-QGI" firstAttribute="top" secondItem="a3N-00-KoI" secondAttribute="bottom" constant="10" id="pOz-kb-Zhv"/>
                             <constraint firstItem="yLJ-5b-lrZ" firstAttribute="top" secondItem="NdD-ya-QGI" secondAttribute="bottom" constant="10" id="pSS-4P-bPM"/>
+                            <constraint firstItem="QPd-bm-247" firstAttribute="trailing" secondItem="2kb-RZ-dD4" secondAttribute="trailing" constant="10" id="s4e-92-Fuw"/>
+                            <constraint firstItem="K32-CP-aLW" firstAttribute="top" secondItem="2kb-RZ-dD4" secondAttribute="bottom" constant="10" id="t3d-0e-MnO"/>
                             <constraint firstItem="ZCq-NR-ZNV" firstAttribute="leading" secondItem="QPd-bm-247" secondAttribute="leading" constant="10" id="yN8-G2-3zW"/>
                         </constraints>
                     </view>
@@ -171,6 +182,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bcq-Zh-OlF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1824.6376811594205" y="105.80357142857143"/>
+        </scene>
+        <!--Category Input View Controller-->
+        <scene sceneID="cgT-3R-Bid">
+            <objects>
+                <viewController id="jvb-2Y-BCJ" customClass="CategoryInputViewController" customModule="taskapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZF-mK-6e3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8UA-Q7-Rbk">
+                                <rect key="frame" x="10" y="98" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pzm-sH-gUZ">
+                                <rect key="frame" x="10" y="129" width="394" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vqy-1g-aEs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pzm-sH-gUZ" firstAttribute="top" secondItem="8UA-Q7-Rbk" secondAttribute="bottom" constant="10" id="9OL-yp-Q6V"/>
+                            <constraint firstItem="8UA-Q7-Rbk" firstAttribute="top" secondItem="vqy-1g-aEs" secondAttribute="top" constant="10" id="GGh-lF-z1Y"/>
+                            <constraint firstItem="vqy-1g-aEs" firstAttribute="trailing" secondItem="8UA-Q7-Rbk" secondAttribute="trailing" constant="10" id="Q1S-0Q-021"/>
+                            <constraint firstItem="8UA-Q7-Rbk" firstAttribute="leading" secondItem="vqy-1g-aEs" secondAttribute="leading" constant="10" id="ahe-9c-Q8W"/>
+                            <constraint firstItem="vqy-1g-aEs" firstAttribute="trailing" secondItem="Pzm-sH-gUZ" secondAttribute="trailing" constant="10" id="t3p-nf-tHV"/>
+                            <constraint firstItem="Pzm-sH-gUZ" firstAttribute="leading" secondItem="vqy-1g-aEs" secondAttribute="leading" constant="10" id="zIj-sW-Ukm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NZy-Db-14X"/>
+                    <connections>
+                        <outlet property="CateroryText" destination="Pzm-sH-gUZ" id="11f-KM-Jd9"/>
+                        <outlet property="lll" destination="8UA-Q7-Rbk" id="jNy-P5-fb0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBh-Qv-Qrf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2601" y="104"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W3J-VM-FOI">

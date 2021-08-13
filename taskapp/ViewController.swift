@@ -15,7 +15,9 @@ class ViewController: UIViewController, UITableViewDataSource , UITableViewDeleg
     
     let realm = try! Realm()
     var taskArray = try! Realm().objects(Task.self).sorted(byKeyPath: "date", ascending: true)
+    //var categoryArray = try! Realm().objects(Category.self)
     
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -106,7 +108,7 @@ class ViewController: UIViewController, UITableViewDataSource , UITableViewDeleg
     }
     // 入力画面から戻ってきた時に TableView を更新させる
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+       super.viewWillAppear(animated)
         tableView.reloadData()
     }
     
